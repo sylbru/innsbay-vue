@@ -1,64 +1,33 @@
 <template>
-  <section class="container">
-    <div>
-      <Domain v-for="(domain, i) in domains" :key="i" :domain="domain" />
+  <div>
+    <!--<div id="news"><span class="nouveau">[Nouveau]</span> Projection <strong>…</strong> […]</div>-->
+    <div class="center">
+      <a href="image-seq4.jpg" rel="lightbox" title="La réception de l’hôtel d’Innsbay."><img src="image-seq4-r.jpg" alt="La réception de l’hôtel d’Innsbay." /></a>
+      <a href="image2.jpg" rel="lightbox" title="Le visage de l’homme dans son miroir."><img src="image2r.jpg" alt="Le visage de l’homme dans son miroir." /></a>
+      <a href="image-seq12p.jpg" rel="lightbox" title="La fuite dans les rues d’Innsbay."><img src="image-seq12p-r.jpg" alt="La fuite dans les rues d’Innsbay." /></a>
     </div>
-  </section>
+
+    <h2 style="display:none">Présentation</h2>
+    <p class="main">
+      <strong class="titre" itemprop="name">Innsbay</strong> est un court/moyen métrage de <time itemprop="duration" datetime="PT30M">30 minutes</time>, réalisé par <span itemprop="director editor">Sylvain Brunerie</span>, librement adapté de la nouvelle de <a href="http://fr.wikipedia.org/wiki/H._P._Lovecraft" target="_blank"><span itemprop="author">H.&nbsp;P.&nbsp;Lovecraft</span></a> «&nbsp;<a href="http://fr.wikipedia.org/wiki/Le_Cauchemar_d'Innsmouth" target="_blank">Le&nbsp;Cauchemar d’Innsmouth</a>&nbsp;».
+    </p>
+
+    <h3>Synopsis</h3>
+    <blockquote>Un homme se rend dans une ville inconnue, attiré par la description pourtant sordide qu’on lui en fait. Adapté de la nouvelle de H.&nbsp;P.&nbsp;Lovecraft «&nbsp;Le&nbsp;Cauchemar d’Innsmouth&nbsp;», Innsbay est le récit de la déconstruction lente et terrible d’une vie humaine.</blockquote>
+
+    <meta itemprop="inLanguage" content="fr" />
+    <!--<meta itemprop="subtitleLanguage" content="fr en pt es" />-->
+    <meta itemprop="url" content="http://vimeo.com/sylvainbrunerie/innsbay" />
+  </div>
 </template>
 
 <script>
-import Domain from '~/components/Domain.vue'
-import AppLogo from '~/components/AppLogo.vue'
-
+/*
 export default {
-  data () {
+  head () {
     return {
-      domains: [
-        {
-          "name": "Code",
-          "description": "Web development and stuff"
-        },
-        {
-          "name": "Music",
-          "description": "Mandolin, fiddle and guitar"
-        }
-      ]
+      title: `${this.title} / Accueil`,
     }
-  },
-  components: {
-    Domain,
-    AppLogo,
-  },
-}
+  }
+}*/
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

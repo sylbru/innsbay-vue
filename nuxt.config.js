@@ -1,17 +1,12 @@
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Environment variables
+   */
   head: {
-    title: 'Innsbay',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Innsbay' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    title: "Innsbay - court métrage de Sylvain Brunerie, d’après H. P. Lovecraft",
+  },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   },
   /*
   ** Customize the progress bar color

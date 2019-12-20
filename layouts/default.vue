@@ -1,6 +1,24 @@
 <template>
-  <div>
-    <nuxt/>
+  <div id="conteneur" itemscope itemtype="http://schema.org/Movie">
+    <header id="div_titre">
+      <h1><nuxt-link to="/" title="Accueil">Innsbay</nuxt-link></h1>
+      <div id="imdb">
+        <a href="http://www.imdb.com/title/tt1986870/" itemprop="sameAs" title="Lien vers la fiche IMDb de Innsbay" target="_blank"><img src="imdb_h30.png" alt="Lien vers la fiche IMDb de Innsbay" /></a>
+      </div>
+    </header>
+    <div><img src="image2r_bg.jpg" alt="" style="display:none;" /></div><!-- Préchargement de l’image -->
+    <nav id="div_menu">
+      <ul id="menu">
+        <li><nuxt-link to="/" title="Accueil">Présentation</nuxt-link></li>
+        <li><nuxt-link to="/infos">Informations diverses</nuxt-link></li>
+        <li><nuxt-link to="/voir">Comment le voir</nuxt-link></li>
+        <li><nuxt-link to="/ressources">Ressources et liens</nuxt-link></li>
+        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+      </ul>
+    </nav>
+    <section id="div_contenu" role="main">
+      <nuxt />
+    </section>
   </div>
 </template>
 
